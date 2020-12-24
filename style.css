@@ -18,7 +18,6 @@ body {
 
   .header {
     background-color: #2D303A;
-    width: 1020px;
     height: 89px;
     margin: auto;
     border-bottom: solid 6px #323746;
@@ -34,15 +33,12 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-
-
   }
   h1 {
       font-size: 25px;
       padding: 0;
       margin: 0;
   }
-
   .logo {
     text-transform: uppercase;  
     display: flex;  
@@ -52,7 +48,6 @@ body {
     margin-left: 40px;
     line-height: 30px;
   }
-
   .header-nav {
       width: 375px;
       height: 14px;
@@ -67,7 +62,6 @@ body {
     justify-content: space-around;
     color: white;
   }
-  
   .header-nav-link {
     text-transform: uppercase;
     color: #ffffff;
@@ -92,7 +86,7 @@ body {
       list-style-type: none;
   }
 .slider {
-    width: 1020px;
+    max-width: 1020px;
     height: 594px;
     background: #F06C64;
     border-bottom: solid 6px #EA676B;
@@ -101,7 +95,13 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.slider .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
 button {
     width: 17px;
     height: 28px;
@@ -128,17 +128,15 @@ button:hover {
 }
 .phone-1 {
     position: absolute;
-    width: 216px;
-    height: 458px;
     display: flex;
-    margin-left: 111.5px;
+    Left: 10%;
+    top: 10%;
 }
 .phone-2 {
     position: absolute;
-    width: 458px;
-    height: 216px;
     display: flex;
-    margin-left: 425px;
+    left: 46%;
+    top: 43%;
 
 }
 .phone-1-shadow {
@@ -236,6 +234,14 @@ button:hover {
     display: flex;
     align-items: center;
 }
+.phone-button-1::after, .phone-button-2::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: solid 1px #BABABA;
+    margin:auto;
+    border-radius: 4px;
+}
 .phone-button-2 {
     position: absolute;
     width: 41.88px;
@@ -246,14 +252,7 @@ button:hover {
     margin-left: 8.37px;
     z-index: 5;
     display: flex;
-    align-items: center;
-}
-.square {
-    width: 16.42px;
-    height: 16.42px;
-    border: solid 1px #BABABA;
-    margin-left: 12.73px;
-    border-radius: 4px;
+    justify-content: center;
 }
 
 .servises {
@@ -989,7 +988,7 @@ footer {
 @media (max-width: 375px) {
     .header {
         background-color: #2D303A;
-        width: 375px;
+        max-width: 375px;
         height: 71px;
         margin: auto;
         border-bottom: solid 6px #323746;
@@ -1031,6 +1030,34 @@ footer {
           margin-right: 40px;
           display: none;
       }
+      .header-button {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          width: 20px;
+          height: 3px;
+          border:none;
+          background-color: white;
+          border-radius: 3px;
+          left: 5%;
+      }
+      .header-button::before {
+        position: relative;
+        content: "";
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transform: translateY(10px);
+      }
+      .header-button::after {
+        content: "";
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transform: translateY(-10px);
+      }  
       .header-nav-list {
         margin: 0;
         padding: 0;
