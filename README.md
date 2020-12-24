@@ -1,1 +1,1 @@
-https://A-Konoplicliy.github.io/rsschool-cv/cv 
+https://A-Konoplicliy.github.io/rsschool-cv/calculator 
