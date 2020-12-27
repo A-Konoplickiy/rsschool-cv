@@ -1,1 +1,1 @@
-https://A-Konoplicliy.github.io/rsschool-cv/singolo 
+https://A-Konoplickiy.github.io/rsschool-cv/singolo 
